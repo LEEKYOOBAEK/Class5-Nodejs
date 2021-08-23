@@ -5,12 +5,13 @@ console.log(Math.round(1.4));
 //입력값이 있어요~ 
 
 function sum(a,b) {
-    var a = 2;
-    var b = 3;
-    return a + b;
+console.log('a');
+return a + b;
+//어떤 값을 출력한다는 의미와 여기서 종료한다는 특수한 의미를 갖는다.
+console.log('b');
 }
 
-console.log(sum());
+console.log(sum(3,5));
 
 function sum2(first,second){ //parameter
     console.log(first+second);
