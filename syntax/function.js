@@ -14,7 +14,7 @@ console.log('Z');
 console.log('J');
 console.log('I');
 //node syntax/function.js
-var i = 0;
+
 function f123() {
     console.log(1);
     console.log(2);
