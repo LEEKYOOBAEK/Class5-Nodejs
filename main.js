@@ -1,6 +1,10 @@
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
+var a = "r";
+if( a === "r"){
+  console.log("push");
+}
 
 function templateHTML(title, list, body) {
   return `
@@ -81,4 +85,5 @@ var app = http.createServer(function (request, response) {
     response.end('Not found');
   }
 });
+
 app.listen(3000);
