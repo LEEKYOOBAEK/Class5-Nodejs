@@ -83,9 +83,11 @@ var app = http.createServer(function(request,response){
           var post = qs.parse(body);
           var title = post.title;
           var description = post.description
-      });
-      response.writeHead(200);
+          fs.writeFile(`data/${title}`, description, 'utf8', function(err){
+            response.writeHead(200);
       response.end('success');
+          });
+      }); 
     } else {
       response.writeHead(404);
       response.end('Not found');
